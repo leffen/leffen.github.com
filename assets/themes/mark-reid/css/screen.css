@@ -7,13 +7,7 @@
 
 /* screen.css
  *
- * A clean, simple stylesheet that aims for
- * a consistent vertical rhythm.
- *
- * Base font height: 16px
- * Base line length: 24px
- * 
- * AUTHOR: Mark Reid <mark@reid.name>
+ * Based on a screen.css done by Mark Reid <mark@reid.name>
  */
 
 /* @group Reset */
@@ -21,11 +15,13 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,p,blockquote,th,t
 /* @end */
 
 body {
-	font-family: Palatino, georgia, "times new roman", serif;
+    font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, "MS PGothic", Osaka, Sans-Serif;
 	background-color: whitesmoke;
 	background-position: center -18em;
 	background-repeat: repeat-x; 
 }
+
+h1,h2,h3,h4,h5,h6 {font-weight: bold;}
 
 /* Hack via Joel Spolsky to make image rescaling nicer in IE */
 img { -ms-interpolation-mode:bicubic; }
@@ -45,7 +41,6 @@ h1,h2,h3,h4 {
 	font-size:1.5em; 
 	font-weight: normal; 
 	clear: left; 	
-	font-family: 'lucida grande', sans-serif; 
 }
 h1 { margin-bottom: 1em; }
 h2 {
@@ -85,16 +80,6 @@ sup { line-height: 1ex; }
 }
 
 #disqus_thread { padding-top: 0; }
-
-/* TODO
-#page { counter-reset: section; }
-#page h2:before {
-	margin-left: -3.5ex;
-	color: silver;
-	content: "§" counter(section) ". ";
-	counter-increment: section 2;
-}
-*/
 
 /* @group FancyFirst */
 .emphnext + p:first-letter, p.emphfirst:first-letter {
@@ -207,7 +192,8 @@ ul.compact li a {
 	margin-bottom: 0;
 }
 #header h1 {
-	font-family: Palatino, georgia, "times new roman", serif;
+/*	font-family: Palatino, georgia, "times new roman", serif;  */
+    font-size: 20pt;
 	margin-bottom: 0;
 	line-height: 0.9em;
 	display: block;
@@ -451,35 +437,19 @@ p.delicious-extended:before { content: ' — '; }
 /* @end */
 
 /* @group Footer */
-#footer {
+.footer {
 	margin-top: 0;
 	color: grey;
 	font-size: 87.5%;
 	line-height: 1.3em;
 }
-#footer address {
-	position: relative;
-	margin: .5em 0 0 0;
-	text-align: right;
-}
-#footer a {
+.footer a {
 	font-variant: small-caps;
 	font-style: normal;
 	color: #77d;
 	text-decoration: none;
 }
-#footer .copyright {
-	position: absolute;
-	left: 0;
-	text-align: left;
-	display: block;
-}
-#footer .engine {
-	position: absolute;
-	text-align: right;
-	display: block;
-	right: 0;
-}
+
 /* @end */
 
 
