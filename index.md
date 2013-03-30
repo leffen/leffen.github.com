@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Welcome to my dev blog
-tagline: Leffens dev blog
+title: Back to basic
+tagline: Start using jekyll as my blog "engine"
 ---
 {% include JB/setup %}
 
-Hallooooo..
+
 
 

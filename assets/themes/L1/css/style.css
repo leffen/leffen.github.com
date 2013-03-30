@@ -59,5 +59,11 @@ html, body {
 
 .footer{
     clear: both;
-    background: #343434;
-    color: #ffffff;}
+    background: #343434 url(../img/_footer_background.png);;
+    color: #ffffff;
+    padding: 0 0 144px 0;
+    text-align: center;
+    position: inherit;
+    margin: 50px auto 0;
+
+}

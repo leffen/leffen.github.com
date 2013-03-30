@@ -14,24 +14,13 @@
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <!-- Le styles -->
     <link href="{{ ASSET_PATH }}/css/bootstrap.min.css" rel="stylesheet">
-    <style type="text/css" media="screen">
-      body {
-        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
-      }
-    </style>
+    <style type="text/css" media="screen">body {padding-top: 60px;}</style>
     <link href="{{ ASSET_PATH }}/css/bootstrap-responsive.min.css" rel="stylesheet">
     <link href="{{ ASSET_PATH }}/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
     <link href="{{ ASSET_PATH }}/css/syntax.css" rel="stylesheet" type="text/css">
 
-    <!-- Le fav and touch icons -->
     <link rel="shortcut icon" href="/figs/favicon.ico">
-  <!-- Update these with your own images
-    <link rel="apple-touch-icon" href="/figs/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/figs/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/figs/apple-touch-icon-114x114.png">
-  -->
   </head>
 
   <body>
@@ -53,13 +42,16 @@
     </div>
 
     <div class="container">
-
       <div class="content">
         {{ content }}
       </div>
+    </div>
 
-    </div> <!-- /container -->
-    <div class="footer">Content by <a href="/info/site.html">{{ site.author.name }}</a></div>
+    <div class="footer">
+      <div class="logo"><img src="{{ ASSET_PATH }}/img/logo_1.png"></div>
+      <p class="author">Content by <a href="/info/site.html">{{ site.author.name }}</a></p>
+
+    </div>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="{{ ASSET_PATH }}/js/jquery.min.js"><\/script>')</script>
